@@ -3,6 +3,8 @@ package com.erp.produto.domain.entity;
 import jakarta.persistence.*;
 import lombok.*;
 
+import java.math.BigDecimal;
+
 @AllArgsConstructor
 @NoArgsConstructor
 @Getter
@@ -21,7 +23,7 @@ public class Produto {
     @Column(name = "descricao")
     private String descricao;
     @Column(name = "preco")
-    private double preco;
+    private BigDecimal preco;
     @Enumerated(EnumType.STRING)
     @Column(name = "categoria")
     private CategoriaProduto categoria;
