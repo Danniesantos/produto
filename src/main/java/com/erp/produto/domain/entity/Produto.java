@@ -16,15 +16,15 @@ public class Produto {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @EqualsAndHashCode.Include
     private Long id;
-    @Column(name = "name")
+    @Column(name = "nome")
     private String name;
-    @Column(name = "description")
-    private String description;
-    @Column(name = "price")
-    private double price;
+    @Column(name = "descricao")
+    private String descricao;
+    @Column(name = "preco")
+    private double preco;
     @Enumerated(EnumType.STRING)
-    @Column(name = "category")
-    private CategoriaProduto category;
+    @Column(name = "categoria")
+    private CategoriaProduto categoria;
     @Enumerated(EnumType.STRING)
     @Column(name = "status")
     private StatusProduto status;
